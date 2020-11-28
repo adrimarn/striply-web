@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('../font/Futura-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Futura-Bold.otf') format('opentype'), url('../font/Futura-Bold.woff') format('woff'), url('../font/Futura-Bold.ttf') format('truetype'), url('../font/Futura-Bold.svg#Futura-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura Bold', 'Roboto', sans-serif;
+    font-weight: 320;
+}
+
+
+/* --- HEADER --- */
+
+header {
+    /*padding: 12px 0;*/
+    background-color: #202020;
+    overflow: hidden;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+}
+
+header .row,
+footer .row {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    padding: 14px 0;
+    font-weight: 700;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header a {
+    padding: 28px 25px;
+    /*margin: 8px;*/
+    color: white;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        display: none;
+    }
+    header a {
+        padding: 20px 18px;
+    }
+}
+
+header a:hover {
+    color: #d62424;
+    text-decoration: none;
+    border-top: 3px solid #d62424;
+}
+
+header a.active {
+    color: #d62424;
+    text-decoration: none;
+    border-top: 3px solid #d62424;
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #e2e2e2;
+}
+
+
+/* ---HOMEPAGE CONTENT --- */
+
+.large-header-main {
+    background-image: url("../assets/largeheader-main.png");
+    padding-top: 30px;
+    padding-bottom: 5px;
+    /* Center and scale  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.large-header-2 {
+    background-image: url("../assets/largeheader-2.jpg");
+    padding-top: 200px;
+    /* Center and scale  */
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #d1d1d1;
+}
+
+@media screen and (max-width: 768px) {
+    .large-header-2 { padding-top: 100px; }
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+}
+
+#logo-title {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+#slogan {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.getapp-centralbar {
+    padding: 10px 0;
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+.getapp {
+    width: 150px;
+    margin: 0 auto;
+}
+
+#main-content-img {
+    margin: 50px;
+    width: 70%;
+}
+
+#main-content-title {
+    font-size: 4vw!important;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.main-content-description {
+    color: #5a5a5a;
+    font-size: 2vw;
+}
+
+
+/* --- CAREERS PAGE --- */
+
+.large-header-careers {
+    background-image: url("../assets/largeheader-careers-bg.png");
+    padding-top: 30px;
+    padding-bottom: 5px;
+    /* Center and scale  */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid #d1d1d1;
+}
+
+#apply-title {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+#apply-btn {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 50px 0px;
+}
+
+.button {
+    background-color: #e94040;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+#careers-content-img {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#careers-content-title {
+    font-size: 2vw!important;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.careers-content-description {
+    color: #5a5a5a;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+    #apply-btn { font-size: 15px; }
+    #careers-content-img { 
+        margin: 10px; 
+        width: 100px;
+        position: relative;}
+    #careers-content-title { font-size: 15px!important; margin-top: 30px; }
+    .careers-content-description { font-size: 10px!important; }
+}   
+
+/* --- CONTACT PAGE --- */
+#contact-form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 320;
+}

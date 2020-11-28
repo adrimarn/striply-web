@@ -1,0 +1,35 @@
+h2 {
+    font-family: "Roboto", Arial, Verdana;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #091f2f;
+    text-transform: uppercase;
+}
+.faq-section .panel-default > .panel-heading {
+    border: 0;
+    background: #ffffff;
+    padding: 0;
+}
+.faq-section .panel-default .panel-title a {
+    font-family: "Roboto", Arial, Verdana;
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #d62424;
+}
+.faq-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #d62424;
+    float: right;
+    margin-top: -12px;
+}
+.faq-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.faq-section .panel-default .panel-body {
+    font-family: "Roboto", Arial, Verdana;
+    font-size: 1.2rem;
+}
